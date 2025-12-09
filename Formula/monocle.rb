@@ -14,6 +14,18 @@ class Monocle < Formula
     bin.install binary_path
   end
 
+  def install
+    File.open("Sources/MonocleCore/Version.generated.swift", "w") do |f|
+      f.write("package let toolVersion = \"#{version}\"")
+    end
+
+    system "swift", "build", "--disable-sandbox", "-c", "release"
+    
+    binary_path = Dir[".build/*/release/monocle", ".build/release/monocle"].first
+    odie "monocle build artifact not found" if binary_path.nil?
+    bin.install binary_path
+  end
+
   test do
     output = shell_output("#{bin}/monocle version")
     assert_match "monocle #{version}", output
