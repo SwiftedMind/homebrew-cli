@@ -1,7 +1,7 @@
 class Monocle < Formula
   desc "Read-only Swift code inspection tool built on SourceKit-LSP"
   homepage "https://github.com/SwiftedMind/monocle"
-  url "https://github.com/SwiftedMind/monocle.git", branch: "main", tag: "1.2.0", revision: "eee3957deb4f2e8568a74a9476304bc9b0ab3b2e"
+  url "https://github.com/SwiftedMind/monocle.git", branch: "main", tag: "1.2.1", revision: "ff376f7dcc41473efc2653d36f1951c021078424"
   head "https://github.com/SwiftedMind/monocle.git", branch: "main"
   license "MIT"
 
