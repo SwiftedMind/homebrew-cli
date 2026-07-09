@@ -17,8 +17,7 @@ cask "hyperswitcher" do
 
   app "HyperSwitcher.app"
 
-  uninstall quit:       "dev.swiftedmind.HyperSwitcher",
-            login_item: "HyperSwitcher"
+  uninstall quit: "dev.swiftedmind.HyperSwitcher"
 
   zap trash: [
     "~/.config/HyperSwitcher",
