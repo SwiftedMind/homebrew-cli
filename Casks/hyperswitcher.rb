@@ -1,6 +1,6 @@
 cask "hyperswitcher" do
-  version "1.8.0"
-  sha256 "0590e978dfcb0188ed4efecc4961c14b057f2c63e0503422b7798f259f165e38"
+  version "1.8.1"
+  sha256 "1c5df3bde0cbebe6ad2eb2b35901d3da5dd629f5bb1fdbffd3b2f86849b49e2d"
 
   url "https://downloads.hyperswitcher.app/releases/HyperSwitcher-#{version}.dmg"
   name "HyperSwitcher"
